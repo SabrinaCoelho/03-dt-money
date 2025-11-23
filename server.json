@@ -1,20 +1,44 @@
 {
-    "transactions": [
-        {
-            "id": 1,
-            "description": "Desenvolvimento de site",
-            "type": "income",
-            "category": "Venda",
-            "price": 14000,
-            "createdAt": "2025-11-22T23:08:59.090Z"
-        },
-        {
-            "id": 2,
-            "description": "Academia",
-            "type": "outcome",
-            "category": "Alimentação",
-            "price": 78,
-            "createdAt": "2025-11-22T23:08:59.070Z"
-        }
-    ]
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 14000,
+      "createdAt": "2025-11-22T23:08:59.090Z"
+    },
+    {
+      "id": 2,
+      "description": "Academia",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 78,
+      "createdAt": "2025-11-22T23:08:59.070Z"
+    },
+    {
+      "description": "Desenvolvimento de app",
+      "price": 23455,
+      "category": "venda",
+      "type": "income",
+      "createdAt": "2025-11-23T21:58:59.494Z",
+      "id": 3
+    },
+    {
+      "description": "Desenvolvimento de site",
+      "price": 64748,
+      "category": "venda",
+      "type": "income",
+      "createdAt": "2025-11-23T22:03:48.187Z",
+      "id": 4
+    },
+    {
+      "description": "pastel de trigo de queijo",
+      "price": 3,
+      "category": "alimentação",
+      "type": "outcome",
+      "createdAt": "2025-11-23T22:22:04.053Z",
+      "id": 5
+    }
+  ]
 }
