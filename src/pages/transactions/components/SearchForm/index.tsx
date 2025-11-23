@@ -6,7 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useContext } from "react";
 import { TransactionsContext } from "../../../../contexts/TransactionsContext";
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+ 
 const searchFormSchema = z.object({
     query: z.string()
 });

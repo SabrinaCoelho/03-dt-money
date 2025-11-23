@@ -33,6 +33,7 @@ interface TransactionContextType{
     fetchTransactions: (query?: string) => Promise<void>,
     createTransaction: (data: CreateTransactionInput) => Promise<void>
 }
+// eslint-disable-next-line react-refresh/only-export-components
 export const TransactionsContext = createContext({} as TransactionContextType);
 
 export function TransactionProvider({children}: TransactionsProviderProps){
