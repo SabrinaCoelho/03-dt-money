@@ -1,5 +1,6 @@
-import { createContext, useEffect, useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { api } from "../lib/axios";
+import { createContext } from "use-context-selector";
 
 export interface Transaction{
     id: number;
@@ -34,6 +35,7 @@ interface TransactionContextType{
     createTransaction: (data: CreateTransactionInput) => Promise<void>
 }
 // eslint-disable-next-line react-refresh/only-export-components
+// export const TransactionsContext = createContext({} as TransactionContextType);
 export const TransactionsContext = createContext({} as TransactionContextType);
 
 export function TransactionProvider({children}: TransactionsProviderProps){
