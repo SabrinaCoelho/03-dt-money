@@ -9,22 +9,30 @@ export function useSummary(){
     const summary = useMemo(
     //this variable only will be recreated when transactions change
         () => {
-            transactions.reduce(
-                (acc, transaction) => {
-                    if(transaction.type === "income"){
-                        acc.income += transaction.price;
-                        acc.total += transaction.price;
-                    }else{
-                        acc.outcome += transaction.price;
-                        acc.total -= transaction.price;
-                    }
-                    return acc;
-                }, {
+            if(transactions.length === 0){
+                return {
                     income: 0,
                     outcome: 0,
                     total: 0
                 }
-            )
+            }else{
+                return transactions.reduce(
+                    (acc, transaction) => {
+                        if(transaction.type === "income"){
+                            acc.income += transaction.price;
+                            acc.total += transaction.price;
+                        }else{
+                            acc.outcome += transaction.price;
+                            acc.total -= transaction.price;
+                        }
+                        return acc;
+                    }, {
+                        income: 0,
+                        outcome: 0,
+                        total: 0
+                    }
+                )
+            }
         }, [transactions]
     );
 

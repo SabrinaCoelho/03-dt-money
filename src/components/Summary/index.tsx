@@ -5,6 +5,7 @@ import { useSummary } from "../../hooks/summary";
 
 export function Summary(){
     const summary = useSummary();
+    console.log(summary)
     return(
         <SummaryContainer>
             <SummaryCard>
